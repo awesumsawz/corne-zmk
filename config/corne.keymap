@@ -80,6 +80,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        LayerReset {
+            bindings = <&to 0>;
+            key-positions = <36 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -121,10 +130,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &kp F1          &kp F2          &kp F3        &kp F4           &kp F5   &to 0
+&trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &kp F1          &kp F2          &kp F3        &kp F4           &kp F5   &to 3
 &trans  &trans        &trans        &mkp LCLK     &mkp RCLK     &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp F11  &kp F12
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F6          &kp F7          &kp F8        &kp F9           &kp F10  &trans
                                     &trans        &trans        &trans          &trans          &trans          &trans
+            >;
+        };
+
+        COLEMK {
+            bindings = <
+&kp TAB                    &kp Q             &kp W             &kp F              &kp P                         &kp B                          &kp J                         &kp L                          &kp U               &kp Y              &kp SEMICOLON      &kp BACKSLASH
+&hmls LEFT_CONTROL ESCAPE  &hmls LEFT_ALT A  &hmls LEFT_GUI R  &hml LEFT_SHIFT S  &hml LCTRL T                  &hml LS(LA(LC(LEFT_GUI))) G    &hmr RS(RA(RC(RIGHT_GUI))) M  &hmr RCTRL N                   &hmr RIGHT_SHIFT E  &hmrs RIGHT_GUI I  &hmrs RIGHT_ALT O  &kp SQT
+&kp LSHFT                  &kp Z             &kp X             &kp C              &kp D                         &kp V                          &kp K                         &kp H                          &kp COMMA           &kp DOT            &kp FSLH           &kp RIGHT_SHIFT
+                                                               &mo 1              &hmls LEFT_COMMAND BACKSPACE  &kp ENTER                      &kp SPACE                     &hmrs RIGHT_COMMAND BACKSPACE  &mo 1
             >;
         };
     };
