@@ -115,9 +115,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&sk LS(N5)     &sk LS(N1)     &sk LS(N2)     &kp LBKT      &kp RBKT      &sk LS(N8)    &kp N1      &kp N2      &kp N3      &kp N4     &kp N5     &tog 2
-&sk LS(N3)     &kp MINUS      &sk LS(MINUS)  &sk LS(N9)    &sk LS(N0)    &kp EQUAL     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &kp GRAVE  &trans
-&sk LS(EQUAL)  &sk LS(GRAVE)  &sk LS(N4)     &sk LS(LBKT)  &sk LS(RBKT)  &sk LS(N7)    &kp N6      &kp N7      &kp N8      &kp N9     &kp N0     &trans
+&kp LS(N5)     &kp LS(N1)     &kp LS(N2)     &kp LBKT      &kp RBKT      &kp LS(N8)    &kp N1      &kp N2      &kp N3      &kp N4     &kp N5     &tog 2
+&kp LS(N3)     &kp MINUS      &kp LS(MINUS)  &kp LS(N9)    &kp LS(N0)    &kp EQUAL     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &kp GRAVE  &trans
+&kp LS(EQUAL)  &kp LS(GRAVE)  &kp LS(N4)     &kp LS(LBKT)  &kp LS(RBKT)  &kp LS(N7)    &kp N6      &kp N7      &kp N8      &kp N9     &kp N0     &trans
                                              &bl BL_DEC    &bl BL_INC    &bl BL_TOG    &bl BL_TOG  &bl BL_INC  &bl BL_DEC
             >;
         };
