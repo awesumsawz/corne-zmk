@@ -86,6 +86,11 @@
             bindings = <&to 0>;
             key-positions = <36 41>;
         };
+
+        asdf {
+            bindings = <&bt BT_NXT>;
+            key-positions = <37 40>;
+        };
     };
 
     keymap {
